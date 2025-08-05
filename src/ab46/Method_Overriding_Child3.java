@@ -1,13 +1,13 @@
 package ab46;
 
-class Method_Overriding_Parent1 {
+class Method_Overriding_Parent2 {
 	void login() {
 		System.out.println("Login with Email ID");
 	}
 
 }
 
-public class Method_Overriding_Child3 extends Method_Overriding_Parent1 {
+public class Method_Overriding_Child3 extends Method_Overriding_Parent2 {
 
 	void login() {
 		super.login();
