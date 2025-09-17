@@ -1,7 +1,7 @@
 package ab47;
 
 public class NonSyncExample {
-	public void printNumbers() {
+	public  void printNumbers() {
 		for (int i = 1; i <= 5; i++) {
 			System.out.print(i + " ");
 		}
