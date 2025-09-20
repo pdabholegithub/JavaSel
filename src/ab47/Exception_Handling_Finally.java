@@ -3,7 +3,7 @@ package ab47;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Exception_Handling_TryCatch {
+public class Exception_Handling_Finally {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = -1;
@@ -30,13 +30,9 @@ public class Exception_Handling_TryCatch {
 				System.out.println("❌ Invalid input! Please enter a positive numeric value.");
 				sc.nextLine(); // clear the invalid input
 
-			} finally {
-				System.out.println("👉 Cleaning up resources...");
-
 			}
-			//sc.close(); java.lang.IllegalStateException
 		}
-		sc.close(); // ✅ close scanner after loop ends
 
+		sc.close();
 	}
 }
